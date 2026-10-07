@@ -2,19 +2,21 @@ public class Program3_TheTwelveDaysOfChristmas {
   public static void main(String[] args) {
     int dayOfChristmas = 0;
     String daySuffix = "";
+
     while (dayOfChristmas <= 12){
-   // for (int i = 0; i < 13; i++){
       dayOfChristmas++;
       if (dayOfChristmas > 12) {
           break;
         }
            
-      switch(dayOfChristmas){
+      switch(dayOfChristmas) {
         case 1:
         case 2:
           daySuffix = "st";
+          break;
         case 3: 
           daySuffix = "rd";
+          break;
         case 4:
         case 5:
         case 6:
@@ -25,38 +27,37 @@ public class Program3_TheTwelveDaysOfChristmas {
         case 11:
         case 12:
           daySuffix = "th";
+          break;
       }
 
       System.out.print("On the "+ dayOfChristmas + daySuffix + " day of Christmas my true love gave to me\n");
+      
       switch(dayOfChristmas) {
-        //dayOfChristmas--;
-
         case 12:
-          System.out.print("Twelve drummers drumming\n");
-          
+          System.out.print("Twelve drummers drumming,\n");
         case 11:
-          System.out.print("Eleven pipers piping\n");
+          System.out.print("Eleven pipers piping,\n");
         case 10:
-          System.out.print("Ten lords a-leaping\n");
+          System.out.print("Ten lords a-leaping,\n");
         case 9:
-          System.out.print("Nine ladies dancing\n");
+          System.out.print("Nine ladies dancing,\n");
         case 8:
-          System.out.print("Eight maids a-milking\n");
+          System.out.print("Eight maids a-milking,\n");
         case 7:
-          System.out.print("Seven swans a-swimming\n");
+          System.out.print("Seven swans a-swimming,\n");
         case 6:
-          System.out.print("Six geese a-laying\n");
+          System.out.print("Six geese a-laying,\n");
         case 5:
-            System.out.print("Five golden rings\n");
+            System.out.print("Five golden rings,\n");
         case 4:
-            System.out.print("Four calling birds\n");
+            System.out.print("Four calling birds,\n");
         case 3:
-          System.out.print("Three french hens\n");
+          System.out.print("Three french hens,\n");
         case 2:
           System.out.print("Two turtle doves, and\n");
         case 1:
           System.out.print("A partridge in a pear tree.\n\n");
-        //dayOfChristmas--;    
+        
       }
     } 
   }
