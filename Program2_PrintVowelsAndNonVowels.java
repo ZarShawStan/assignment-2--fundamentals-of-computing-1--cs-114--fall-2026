@@ -7,6 +7,7 @@ public class Program2_PrintVowelsAndNonVowels {
   static int vowelOCount = 0;
   static int vowelUCount = 0;
   static int nonVowelCount = 0;
+  static int nonPrintableCount = 0;
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -29,6 +30,8 @@ public class Program2_PrintVowelsAndNonVowels {
         vowelUCount++;
       } else if (Character.isLetter(charInString)) {
         nonVowelCount++;
+      } else if (charInString < 0x20 || charInString == 0x7F){
+        nonPrintableCount++;
       }
     }
 
@@ -38,5 +41,6 @@ public class Program2_PrintVowelsAndNonVowels {
     System.out.println("o: " + vowelOCount);
     System.out.println("u: " + vowelUCount);
     System.out.println("non-vowels: " + nonVowelCount);
+    System.out.println("non-printable: " + nonPrintableCount);
   }
 }
